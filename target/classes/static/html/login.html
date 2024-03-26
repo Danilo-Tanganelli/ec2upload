@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo1.css">
+        <link rel="icon" type="image/png" href="../img/unlocked.png">
+    </head>
+<body>
+  <header>
+    <nav>
+      <div>
+        <a href="home.html"><img src="../img/soccer-ball.png" alt=""></a>
+      </div>
+      <div>
+        <a href="cadastro.html">Cadastrar</a>
+        <a href="login.html">Entrar</a>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <h1>Entrar</h1>
+    <div class="input">
+      <table>
+        <tr>
+          <td><label for="username">Usuário:</label></td>
+          <td><input id="username"></td>
+        </tr>
+        <tr>
+          <td><label for="password">Senha:</label></td>
+          <td><input type="password" id="password"></td>
+        </tr>
+        <tr><td></td><td><button onclick="getToken()">Entrar</button></td></tr>
+        <tr><td></td><td><a href="cadastro.html">Criar novo usuário</a></td></tr>
+      </table>
+    </div>
+    <div id="message"></div>
+  </section>
+  
+  <script src="/js/jwt-vanilla.js"></script>
+
+</body>
+</html>

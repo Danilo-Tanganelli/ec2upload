@@ -1,0 +1,426 @@
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 40em;
+  margin: auto;
+  color: #4a4a4a;
+  background-color: #f9f9f9;
+}
+
+header{
+  background-color: #1d75845b;
+  width: 72em;
+  border-radius: 0 0 32px 32px;
+  padding: 0 8px;
+  border: #4a4a4a solid 2px;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.selected{
+  font-weight: bolder;
+}
+
+header nav div a{
+  padding: 0 16px 0 16px;
+}
+
+header nav div a img{
+  width: 40px;
+  margin: 0;
+}
+
+.boasvindas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 64em;
+  margin: 0 0 16px 0;
+}
+
+.boasvindasTitulo{
+  margin: 64px 0;
+}
+
+.boasvindas div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boasvindas div:nth-child(2) div:nth-child(2){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.boasvindas div:nth-child(2) input, p{
+  margin: 0;
+}
+
+#busca{
+  border: solid black 1px;
+  margin: 0;
+}
+
+.partidas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 64em;
+  background-color: #1d75845b;
+  border: #4a4a4a solid 2px;
+  border-radius: 32px;
+}
+
+.campoBusca{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fichasJogos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 64em;
+  margin: 32px 0;
+}
+
+.fichasJogos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 64em;
+  margin: 0;
+}
+
+.fichaJogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24em;
+  border: #4a4a4a solid 2px;
+  border-radius: 8em;
+  margin: 16px 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.fichaJogo2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24em;
+  border: #4a4a4a solid 2px;
+  border-radius: 8em;
+  margin: 16px 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.fichaJogo:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 1.5);
+}
+
+.fichaJogo div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.fichaJogo div p{
+  margin: 0;
+}
+
+.boxApp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 64em;
+}
+
+.fichasApps{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 64em;
+  margin: 32px 0;
+}
+
+.fichaApp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16em;
+  margin: 16px 0;
+  border: #4a4a4a solid 2px;
+  background-color: #1d75845b;
+  border-radius: 32px;
+  padding: 16px 0;
+}
+
+.fichaApp p:nth-child(1){
+  font-weight: bolder;
+}
+
+.fichaApp p{
+  margin: 0;
+}
+
+.geren{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.35em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+small, sub, sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #1d7484;
+  margin: 16px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1d7484;
+}
+
+ul {
+  padding-left: 1.4em;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #1d7484;
+  margin-bottom: 2.5rem;
+  background-color: #f1f1f1;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #f1f1f1;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code, kbd, samp {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #f1f1f1;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+}
+
+td, th {
+  padding: 0.5em;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+/* Buttons, forms and input */
+input, textarea {
+  border: 1px solid #4a4a4a;
+}
+input:focus, textarea:focus {
+  border: 1px solid #1d7484;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button, button, input[type=submit], input[type=reset], input[type=button] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #1d7484;
+  color: #f9f9f9;
+  border-radius: 1px;
+  border: 1px solid #1d7484;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled], button[disabled], input[type=submit][disabled], input[type=reset][disabled], input[type=button][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus:enabled, .button:hover:enabled, button:focus:enabled, button:hover:enabled, input[type=submit]:focus:enabled, input[type=submit]:hover:enabled, input[type=reset]:focus:enabled, input[type=reset]:hover:enabled, input[type=button]:focus:enabled, input[type=button]:hover:enabled {
+  background-color: #982c61;
+  border-color: #982c61;
+  color: #f9f9f9;
+  outline: 0;
+  transition: 0.4s;
+}
+
+textarea, select, input {
+  color: #4a4a4a;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus, select:focus, input:focus {
+  border: 1px solid #1d7484;
+  outline: 0;
+}
+
+input[type=checkbox]:focus {
+  outline: 1px dotted #1d7484;
+}
+
+label, legend, fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+#message{
+  font-weight: bolder;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1d75845b;
+  width: 72em;
+  border-radius: 32px 32px 0 0;
+  padding: 32px 8px;
+  border: #4a4a4a solid 2px;
+}
+
+footer div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div a{
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+footer div img{
+  width: 26px;
+  margin: 0 8px 0 0;
+}
+
+footer div div:nth-child(2){
+  align-items: flex-start;
+}

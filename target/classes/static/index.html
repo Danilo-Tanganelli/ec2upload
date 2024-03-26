@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilo1.css">
+    </head>
+<body>
+  <h1>Bem-vindo ao Gerenciamento FIFA!</h1>
+  <p>Aguarde enquanto verificamos se você já pode acessar nossos dados!</p>
+
+  <script>
+var token = localStorage.getItem('token');
+if (!token) {
+	window.location.replace("/html/home.html");
+}
+var url = "/hello"
+var xhr = new XMLHttpRequest();
+
+xhr.open('GET', url, true);
+xhr.setRequestHeader("Authorization", "Bearer " + token);
+xhr.addEventListener('load', function() {
+	if (this.responseText == 'hi') {
+		window.location.replace("/html/login.html");
+	}
+	else {
+		window.location.replace("/html/home.html");
+	}
+});
+
+xhr.send(null);
+  </script>
+</body>
+</html>
